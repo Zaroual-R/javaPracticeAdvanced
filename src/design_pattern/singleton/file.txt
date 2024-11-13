@@ -1,0 +1,10 @@
+Explanation:
+Private Constructor: The constructor is private to prevent instantiation from outside the class.
+
+Static Instance Variable: The static variable instance holds the single instance of DatabaseConnection.
+
+Synchronized Method: The getInstance() method checks if an instance already exists. If not, it creates one. The method is synchronized to make it thread-safe.
+
+Connection Initialization: The connection to the MySQL database is established in the constructor using DriverManager.
+
+Usage: In the SingletonPatternExample, we retrieve the database connection through the singleton instance and can use it for database operations.

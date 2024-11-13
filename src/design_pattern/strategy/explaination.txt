@@ -1,0 +1,18 @@
+explaination : the strategy design pattern is a behavioral design pattern wich uses to hide the algorithm
+implementaion details from user.
+
+IT USED for defining multiple algorithms with the same action of a clien .
+
+
+OUR EXAMPLE / :
+
+Explanation:
+Strategy Interface: PaymentStrategy defines a common method pay(int amount) for all payment strategies.
+
+Concrete Strategies:
+
+CreditCardPayment implements the payment method using a credit card.
+PayPalPayment implements the payment method using PayPal.
+Context Class: ShoppingCart uses a PaymentStrategy to process payments. It allows setting the payment strategy and performing the checkout.
+
+Client Code: In the StrategyPatternExample, we demonstrate changing payment strategies at runtime.

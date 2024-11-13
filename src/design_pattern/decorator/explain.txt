@@ -1,0 +1,24 @@
+some people called decOraated pattern as a wrapper pattern also as well , it used to add a behavior t an object
+of some class.without changing the behavioral of other objects of the same classes .
+
+Explanation:
+Component Interface: Coffee defines the basic operations that can be performed on coffee, like getting the description and the cost.
+
+Concrete Component: SimpleCoffee implements the Coffee interface, providing a base coffee with a cost.
+
+Decorator Abstract Class: CoffeeDecorator implements the Coffee interface and holds a reference to a Coffee object, allowing it to delegate method calls.
+
+Concrete Decorators:
+
+MilkDecorator adds milk to the coffee and modifies the description and cost.
+SugarDecorator adds sugar to the coffee and modifies the description and cost.
+Client Code: In the DecoratorPatternExample, we create a simple coffee, then decorate it with milk and sugar, demonstrating how the behavior is added dynamically.
+
+Output:
+When you run the DecoratorPatternExample, you will see:
+
+bash
+Copier le code
+Simple Coffee $2.0
+Simple Coffee, Milk $2.5
+Simple Coffee, Milk, Sugar $2.7

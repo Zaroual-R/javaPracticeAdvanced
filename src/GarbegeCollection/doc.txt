@@ -1,0 +1,10 @@
+                                      GARBEGE COLLECTION
+1- any object on the heap wich can not be reached through a reference  from the stack is eligible from
+   garbege collection
+
+2-if we want to call garbeg collection : System.gc() but it is no effecient to call gc exept some cases
+
+3-once, an object is eligible for carbege collection jvm will execute the finalize methode of this object
+  and that will be useful for data warning messages
+
+
